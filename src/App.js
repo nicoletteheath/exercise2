@@ -1,23 +1,37 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        
+
+     <ul>
+         <li>item 1</li>
+         <li>item 1</li>
+         <li>item 1</li>
+         <li>item 1</li>
+     </ul>
+
+
+
+
+     
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          My value is {value}
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <button  onClick={() => {
+            setValue(value + 1)
+        }}>Increase</button>
+        <button  onClick={() => {
+            setValue(value - 1)
+        }}>Decrease</button>
+
+    </div>
+
+
+// parse the grocery item and price through (use propts)
+
       </header>
     </div>
   );
